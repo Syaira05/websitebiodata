@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id" class="transition duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Sabrina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/rellax/rellax.min.js"></script>
+  <style>
+    :root {
+      --theme-color: #ec4899;
+    }
+    .theme-text { color: var(--theme-color); }
+    .theme-bg { background-color: var(--theme-color); }
+    .theme-border { border-color: var(--theme-color); }
+    body {
+      background: linear-gradient(to bottom, #ffffff, #fbcfe8); 
+    }
+header {
+            background: linear-gradient(to bottom,#f7398f, #ffb9d9); 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d9e0;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    padding: 40px;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #d34d80;
+    margin-bottom: 20px;
+}
+
+.skills-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-item {
+    width: 120px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.skill-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: #ec4899;
+}
+
+.skill-item.clicked {
+    background-color: #64ffda;
+    transform: scale(1.1);
+}
+  </style>
+</head>
+<body class="bg-pink-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition duration-300">
+
+
+  <!-- Header -->
+  <header class="text-center py-20" data-aos="fade-up">
+    <div class="rellax flex flex-col items-center" data-rellax-speed="-3">
+      <img src="fotoku.jpg" alt="Foto Profil Sabrina"
+           class="w-36 h-36 object-cover rounded-full shadow-lg border-4 border-white dark:border-gray-800 mb-6" />
+      <h1 class="text-5xl font-extrabold theme-text-pink">Syaira Nurul Sabrina</h1>
+      <p class="text-xl mt-4 text-pink-800 dark:text-pink-300">Portofolio Design Syaira</p>
+    </div>
+  </header>
+
+  <!-- Tentang Saya -->
+  <section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text"></h2>
+    <p class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+      Saya adalah seorang mahasiswa semester 4 sistem informasi sebagai UI/UX design.
+    </p>
+  </section>
+
+    <!-- skill Saya -->
+    <section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Skill</h2>
+    <div class="skills-box">
+        <div class="skill-item" onclick="skillClicked('HTML')">
+            <img src="gambar html 1.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill-item" onclick="skillClicked('CSS')">
+            <img src="css gambar.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill-item" onclick="skillClicked('JavaScript')">
+            <img src="img/javascript.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-item" onclick="skillClicked('PHP')">
+            <img src="img/php.png" alt="PHP">
+            <p>PHP</p>
+        </div>
+        <!-- Tambahkan skill lainnya di sini -->
+    </div>
+</section>
+  <!-- Proyek -->
+  <section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Proyek</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 hover:scale-105 transform transition">
+        <img src="gambar blender.png" alt="Proyek 1" class="rounded mb-4">
+        <h3 class="text-xl font-semibold theme-text">Proyek 1</h3>
+        <p>3D Design Blender.</p>
+        <a href="https://drive.google.com/file/d/1WhYPoJ0KQQDIRKVEqcsgMNIW37mUYUqQ/view?usp=sharing" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 hover:scale-105 transform transition">
+        <img src="gambar html 2.png" alt="Proyek 2" class="rounded mb-4">
+        <h3 class="text-xl font-semibold theme-text">Proyek 2</h3>
+        <p>Website Login Landing Page.</p>
+        <a href="https://drive.google.com/file/d/1V3rV1XtNzQLSPFBqhsd8ClaMVXzIrUBj/view?usp=sharing" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Diri -->
+  <section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Tentang Saya</h2>
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md space-y-3">
+      <p><strong>Nama:</strong> Syaira Nurul Sabrina</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Medan, 5 Mei 2005</p>
+      <p><strong>HP:</strong> 083871707211</p>
+      <p><strong>Alamat:</strong> Jln. Muctar Basri No.118 Glugur Darat ll, Medan Timur, Medan, Sumatera Utara </p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+<section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-4 theme-text">Kontak Saya</h2>
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md space-y-2">
+    <p>Email: 
+      <a href="mailto:ssyairanurul@gmail.com?subject=Halo&body=Tuliskan pesan Anda di sini" 
+         class="text-blue-500 hover:underline">
+        ssyairanurul@gmail.com 
+     
+      </a>
+    </p>
+    <p>Instagram: 
+      <a href="https://www.instagram.com/__aararaa" target="_blank" class="text-blue-500 hover:underline">
+        @__aararaa
+      </a>
+    </p>
+    <p>GitHub: 
+      <a href="https://github.com/anda" target="_blank" class="text-blue-500 hover:underline">
+       github.com/Syaira05
+      </a>
+    </p>
+    <p>whatsapp: 
+      <a href="083871707211" target="_blank" class="text-blue-500 hover:underline">
+        083871707211
+      </a>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="text-center py-10 text-gray-600 dark:text-gray-400">
+    &copy; 2025 Syaira Nurul Sabrina.
+  </footer>
+
+  <!-- Script Animasi -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+    new Rellax('.rellax');
+  </script>
+
+</body>
+</html>
